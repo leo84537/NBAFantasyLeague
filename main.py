@@ -1,9 +1,10 @@
 from fastapi import FastAPI
-from routes import router 
+from routes import players, teams
 
 app = FastAPI()
 
-app.include_router(router)
+app.include_router(players.router)
+app.include_router(teams.router)
 
 
 @app.get("/")
