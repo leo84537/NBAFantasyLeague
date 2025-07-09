@@ -2,7 +2,7 @@ from sqlalchemy.orm import Session
 from database import SessionLocal, engine
 from models.player_model import PlayerBase
 from models.team_model import TeamBase
-from nba_api_methods import get_player_card, get_team_card
+from services.nba_api_methods import get_player_card, get_team_card
 
 # Manually specify players or teams and seasons
 players = ["Stephen Curry", "LeBron James"]

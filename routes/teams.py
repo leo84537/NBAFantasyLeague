@@ -1,8 +1,10 @@
-from fastapi import APIRouter, Depends # Depends is used to auto run functions 
+from fastapi import APIRouter,HTTPException, Depends # Depends is used to auto run functions 
 from sqlalchemy.orm import Session # Depends(get_db()) runs get_db() automatically
 from models.team_model import TeamBase # Update/Record records
 from database import get_db
 from models.team_model import TeamCard  
+from services.nba_api_methods import get_team_card
+
 
 router = APIRouter(prefix="/teams", tags=["Teams"]) # Link name /{teams/team_name}
 

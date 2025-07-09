@@ -1,8 +1,9 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter,HTTPException, Depends
 from sqlalchemy.orm import Session
 from models.player_model import PlayerBase
 from database import get_db
 from models.player_model import PlayerCard
+from services.nba_api_methods import get_player_card
 
 router = APIRouter(prefix="/players", tags=["Players"])
 
