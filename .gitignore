@@ -30,3 +30,5 @@ test.py
 
 # macOS junk
 .DS_Store
+
+.env
