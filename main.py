@@ -8,10 +8,10 @@ app = FastAPI()
 app.include_router(playersrouter)
 app.include_router(teamsrouter)
 
-
+# http://localhost:5173
 app.add_middleware(
   CORSMiddleware,
-  allow_origins=["http://localhost:5173"],
+  allow_origins=["postgresql://postgres.omzbwwxdqjbpofuxgeak:84537LeoSun@aws-0-us-west-1.pooler.supabase.com:5432/postgres"],
   allow_credentials=True,
   allow_methods=["GET", "POST", "PUT", "DELETE"],
   allow_headers=["*"],
