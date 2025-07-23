@@ -6,7 +6,8 @@ import os
 
 # Load environment variables from .env
 load_dotenv()
-DATABASE_URL = "postgresql://leoonly@localhost/nba_db"
+# DATABASE_URL = "postgresql://leoonly@localhost/nba_db"
+DATABASE_URL = "postgresql://postgres.omzbwwxdqjbpofuxgeak:84537LeoSun@aws-0-us-west-1.pooler.supabase.com:5432/postgres"
 
 # Python code to SQL queries and sends them over to PostgreSQL
 # Sessions use the engine to send commands, like .query() or .commit().
