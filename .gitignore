@@ -1,1 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node.js
+nba-frontend/node_modules/
+
+# Environment
+.env
+
+# Alembic (if you don’t want to track migration history)
+alembic/versions/
+
+# Text logs (optional)
+completed_games.txt
+completed_players.txt
+completed_teams.txt
+failed_games.txt
+
+# Seeding Files
+seedbox.py
+seedpt.py
+seedupdate.py
+test.py
+
+# VSCode/IDE
+.vscode/
+*.code-workspace
+
+# macOS junk
 .DS_Store

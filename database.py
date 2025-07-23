@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-DATABASE_URL = "postgresql://leo84537:84537Leo!@localhost/nba_db"
+DATABASE_URL = "postgresql://leoonly@localhost/nba_db"
 
 # Python code to SQL queries and sends them over to PostgreSQL
 # Sessions use the engine to send commands, like .query() or .commit().
