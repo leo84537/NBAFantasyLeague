@@ -14,9 +14,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   </React.StrictMode>
 );
 
-
+// baseURL "http://localhost:8000"
 const api = axios.create({
-  baseURL: "http://localhost:8000", 
+  baseURL: import.meta.env.VITE_API_URL, 
 });
 
 export default api;
