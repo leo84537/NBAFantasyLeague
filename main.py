@@ -18,7 +18,7 @@ app.add_middleware(
 )
 
 # Updates to newest game played
-start_scheduler()
+# start_scheduler()
 
 @app.get("/")
 def root():
