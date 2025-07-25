@@ -7,6 +7,8 @@ import os
 # Load environment variables from .env
 load_dotenv()
 # DATABASE_URL = "postgresql://leoonly@localhost/nba_db"
+# DATABASE_URL=postgresql://leo84537:84537Leo!@localhost:5432/nba_db
+
 DATABASE_URL = os.getenv("DATABASE_URL")
 
 # Python code to SQL queries and sends them over to PostgreSQL

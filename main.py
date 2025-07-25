@@ -11,7 +11,7 @@ app.include_router(teamsrouter)
 # http://localhost:5173
 app.add_middleware(
   CORSMiddleware,
-  allow_origins=["https://nba-fantasy-league-hurh9hdfu-leo-suns-projects.vercel.app", "http://localhost:5173"],
+  allow_origins=["https://nba-fantasy-league-hurh9hdfu-leo-suns-projects.vercel.app", "http://localhost:5173", "https://nba-fantasy-league.vercel.app"],
   allow_credentials=True,
   allow_methods=["GET", "POST", "PUT", "DELETE"],
   allow_headers=["*"],
